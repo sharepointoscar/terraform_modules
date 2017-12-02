@@ -13,3 +13,7 @@ variable "vpc_id" {
 variable "cidr_block" {
   description = "The id of the VPC that the desired subnet belongs to"
 }
+
+variable "map_public_ip_on_launch" {
+  description = "Map public ip at launch time?"
+}
