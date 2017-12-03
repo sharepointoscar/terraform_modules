@@ -1,7 +1,9 @@
 variable "vpc_name" {
   description = "VPC Name"
 }
-
+variable "enable_classiclink" {
+  description = "Whether or not the VPC has Classiclink enabled"
+}
 variable "cidr_block" {
   description = "The CIDR block for the VPC"
 }
