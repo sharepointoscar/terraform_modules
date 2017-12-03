@@ -1,9 +1,6 @@
 variable "ami" {
   description = "The id of the AMI"
 }
-variable "count" {
-  description = "The number of identical intances to deploy"
-}
 
 variable "availability_zone" {
   description = "The availability zone of the Instance."
