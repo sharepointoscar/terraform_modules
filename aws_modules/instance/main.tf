@@ -1,6 +1,5 @@
 resource "aws_instance" "main" {
   ami                         = "${var.ami}"
-  count                       = "${var.count}"
   availability_zone           = "${var.availability_zone}"
   instance_type               = "${var.instance_type}"
   monitoring                  = "${var.monitoring}"
