@@ -12,9 +12,10 @@ resource "aws_instance" "main" {
   subnet_id                   = "${var.subnet_id}"
 
   tags {
-    Name   = "${var.instance_name}"
-    Role   = "${var.ansible_role}"
-    Group  = "${var.ansible_host_group}"
+    Name         = "${var.instance_name}"
+    Role         = "${var.ansible_role}"
+    Group        = "${var.ansible_host_group}"
+    Environment  = "${var.deployment_environment}"
   }
 
   root_block_device {

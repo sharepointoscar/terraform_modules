@@ -58,6 +58,9 @@ variable "iops" {
 variable "delete_on_termination" {
   description = "Whether the volume should be destroyed on instance termination"
 }
+variable "deployment_environment" {
+  description = "Indicate an environment where this instance is deployed i.e. Staging, Development, Production"
+}
 
 variable "ansible_role" {
   default = ""
