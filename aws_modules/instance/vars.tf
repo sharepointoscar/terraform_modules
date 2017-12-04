@@ -59,6 +59,12 @@ variable "delete_on_termination" {
   description = "Whether the volume should be destroyed on instance termination"
 }
 
-variable "tags" {
-  description = "Tag assets so that you are able to query for specific ones when doing Configuration Management with Ansible."
+variable "ansible_role" {
+  default = ""
+  description = "The role this server has in Ansible"
+}
+
+variable "ansible_host_group" {
+  default = ""
+  description = "The host group this server belongs to in Ansible."
 }

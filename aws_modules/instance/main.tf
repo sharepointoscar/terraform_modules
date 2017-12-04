@@ -13,6 +13,8 @@ resource "aws_instance" "main" {
 
   tags {
     Name   = "${var.instance_name}"
+    Role   = "${var.ansible_role}"
+    Group  + "${var.ansible_host_group}"
   }
 
   root_block_device {
