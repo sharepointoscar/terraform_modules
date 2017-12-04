@@ -60,6 +60,5 @@ variable "delete_on_termination" {
 }
 
 variable "tags" {
-  type = "list"
   description = "Tag assets so that you are able to query for specific ones when doing Configuration Management with Ansible."
 }
