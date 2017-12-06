@@ -25,6 +25,9 @@ variable "private_ip_address" {
   description = "The internal IP address"
 }
 
+variable "user_data" {
+  description = "file contents which usually contain scripts i.e. powershell or cmd."
+}
 variable "key_name" {
   description = "Name of keypair to instance"
 }
