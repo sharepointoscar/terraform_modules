@@ -6,7 +6,7 @@ resource "aws_instance" "main" {
 	user_data										=	 "${var.user_data}"
   ebs_optimized               = "${var.ebs_optimized}"
   associate_public_ip_address = "${var.associate_public_ip_address}"
-  private_ip                  = "${var.private_ip_address}"
+  private_ip                  = "${var.private_ip}"
   key_name                    = "${var.key_name}"
   tenancy                     = "${var.tenancy}"
   vpc_security_group_ids      = ["${var.vpc_security_group_ids}"]
