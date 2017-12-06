@@ -21,7 +21,7 @@ variable "ebs_optimized" {
 variable "associate_public_ip_address" {
   description = "Whether or not the Instance is associated with a public IP address or not"
 }
-variable "private_ip_address" {
+variable "private_ip" {
   description = "The internal IP address"
 }
 
