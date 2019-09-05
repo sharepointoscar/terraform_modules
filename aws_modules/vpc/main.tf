@@ -5,7 +5,4 @@ resource "aws_vpc" "main" {
   enable_dns_hostnames = "${var.dns_hostnames}"
   enable_classiclink   = "${var.enable_classiclink}"
 
-  tags = {
-    Name = "${var.vpc_name}"
-  }
 }
